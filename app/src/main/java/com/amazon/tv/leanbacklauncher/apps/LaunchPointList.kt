@@ -725,13 +725,14 @@ class LaunchPointList(ctx: Context) {
                 ComponentName.unflattenFromString("com.android.tv.settings/.connectivity.NetworkActivity")
             specialEntries[component] = SettingsType.WIFI.code
         }
+        val amazonMainSettingsComp: ComponentName? = ComponentName.unflattenFromString("com.amazon.tv.launcher/.ui.MainSettingsActivity")
         for (ptr in rawLaunchPoints.indices) {
             val info = rawLaunchPoints[ptr]
             val comp = getComponentName(info)
             var type = -1
             if (specialEntries.containsKey(comp)) {
                 type = specialEntries[comp]!! // WI-FI
-            } else if (comp.equals(ComponentName.unflattenFromString("com.amazon.tv.launcher/.ui.MainSettingsActivity"))) {
+            } else if (amazonMainSettingsComp!!.equals(comp)) {
                 continue
             }
             if (info.activityInfo != null) {
