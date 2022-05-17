@@ -139,6 +139,7 @@ object FireTVUtils {
     val systemSettingsIntent: Intent
         get() {
             val intent = Intent("amazon.intent.action.MAINSETTINGS")
+            intent.setPackage("com.amazon.tv.launcher/com.amazon.tv.launcher.ui.MainSettingsActivity")
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
             return intent
         }

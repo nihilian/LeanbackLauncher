@@ -731,6 +731,8 @@ class LaunchPointList(ctx: Context) {
             var type = -1
             if (specialEntries.containsKey(comp)) {
                 type = specialEntries[comp]!! // WI-FI
+            } else if (comp.equals(ComponentName.unflattenFromString("com.amazon.tv.launcher/.ui.MainSettingsActivity"))) {
+                continue
             }
             if (info.activityInfo != null) {
                 lp = LaunchPoint(mContext, pkgMan, info, false, type)
