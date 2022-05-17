@@ -774,7 +774,7 @@ class LaunchPointList(ctx: Context) {
 //        }
 
         // NOTIFICATIONS // 3
-        if (FireTVUtils.isAmazonNotificationsEnabled(mContext)) {
+        if (Util.isPackageEnabled(mContext, "com.amazon.tv.notificationcenter")) {
             lp = LaunchPoint(
                 mContext,
                 mContext.getString(R.string.notifications),
