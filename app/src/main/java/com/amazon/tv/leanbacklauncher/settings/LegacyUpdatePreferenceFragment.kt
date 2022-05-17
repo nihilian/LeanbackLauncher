@@ -21,8 +21,7 @@ import java.util.*
 import javax.net.ssl.HttpsURLConnection
 
 class LegacyUpdatePreferenceFragment : GuidedStepSupportFragment() {
-    private val RELEASES_LINK =
-        "https://api.github.com/repos/tsynik/LeanbackLauncher/releases/latest"
+    private val RELEASES_LINK: String? = null
     private var DOWNLOAD_LINK: String? = null
     private val ctx = App.getContext()
 

@@ -257,6 +257,7 @@ or recommendations will not work properly."</string>
     <string name="update_changes">Changes</string>
     <string name="update_check">Check Updates on Startup</string>
     <string name="update_desc">Check for new launcher version</string>
+    <string name="update_disabled_desc">Not supported by this build</string>
     <string name="update_in_progress">Checking for updates…</string>
     <string name="update_install">Install update</string>
     <string name="update_cur_version">Installed version</string>

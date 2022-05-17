@@ -18,8 +18,7 @@ import java.nio.charset.Charset
 import javax.net.ssl.HttpsURLConnection
 
 object Updater {
-    private val RELEASE_LINK =
-        "https://api.github.com/repos/tsynik/LeanbackLauncher/releases"
+    private val RELEASE_LINK: String? = null
     private var releases: Releases? = null
     private var newVersion: Release? = null
 

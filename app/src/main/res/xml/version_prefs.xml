@@ -7,18 +7,23 @@
         <SwitchPreference
             android:key="update_check"
             android:title="@string/update_check"
-            android:defaultValue="true" />
+            android:defaultValue="false"
+            android:enabled="false"
+            android:selectable="false" />
 
         <Preference
             android:key="update"
-            android:summary="@string/update_desc"
-            android:title="@string/update" />
+            android:title="@string/update"
+            android:summary="@string/update_disabled_desc"
+            android:enabled="false"
+            android:selectable="false" />
 
         <Preference
-            android:enabled="true"
             android:key="app_link"
-            android:title="@string/app_releases"
-            android:summary="https://github.com/tsynik/LeanbackLauncher/releases" />
+            android:title=""
+            android:summary=""
+            android:enabled="false"
+            android:selectable="false" />
 
 
     </PreferenceCategory>
